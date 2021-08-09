@@ -50,12 +50,12 @@ func main() {
 		// newUser.Lastname = "smith"
 		// newUser.Email = "smith@mail.com"
 		
-		insert, err := db.Query("INSERT INTO users (firstname, lastname, email) VALUES ('abiola', 'fasanya', 'abiola@mail.com')");
-		if err != nil {
-			panic(err.Error())
-		}
-		defer insert.Close()
-		fmt.Println("Data Inserted Successfullly")
+		// insert, err := db.Query("INSERT INTO users (firstname, lastname, email) VALUES ('abiola', 'fasanya', 'abiola@mail.com')");
+		// if err != nil {
+		// 	panic(err.Error())
+		// }
+		// defer insert.Close()
+		// fmt.Println("Data Inserted Successfullly")
 
 	
 

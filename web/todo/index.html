@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .Completed{
+            border-left: 30px solid green;
+        }
+        li {
+            padding: 20px 15px;
+            border: radius 5px;
+            background-color: rgb(194, 194, 194);
+            list-style: none;
+            margin: 5px;
+        }
+        ul{
+            width: 720px;
+            margin: auto;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>{{.PageTitle}}</h1>
+        <ul>
+            {{range .Todos}}
+                {{if .Completed}}
+                    <li class="completed">{{.Title}}</li>
+                {{else}}
+                    <li>{{.Title}}</li>
+                {{end}}
+            {{end}}
+        </ul>
+        <h5>I am excited to get to this phase of learning</h5>
+    </div>
+</body>
+</html>

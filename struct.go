@@ -23,6 +23,6 @@ func main() {
 
 	fmt.Println("Hello learning struct")
 	fmt.Println("Result", user1)
-	fmt.Printf("Result", user)
-	fmt.Printf("Name : %s\n Age: %d\n Email: %s\n", user.name, user.age, user.email)
+	fmt.Printf("Result: %v\n", user)
+	fmt.Printf("Name : %v\n Age: %v\n Email: %v\n", user.name, user.age, user.email)
 }
